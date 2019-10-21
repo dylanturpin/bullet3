@@ -251,10 +251,12 @@ static int find_coreEGL(EGLDisplay display)
 	{
 		display = eglGetDisplay(EGL_DEFAULT_DISPLAY);
 	}
+/*
 	if (display == EGL_NO_DISPLAY)
 	{
 		return 0;
 	}
+*/
 
 	version = eglQueryString(display, EGL_VERSION);
 	(void)eglGetError();
